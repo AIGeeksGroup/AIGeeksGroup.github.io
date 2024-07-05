@@ -1,1 +1,1 @@
-# AIGeeksClub.github.io
+# AIGeeksGroup.github.io
