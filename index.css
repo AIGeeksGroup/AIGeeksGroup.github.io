@@ -196,6 +196,66 @@ header table {
 }
 
 
+#contactnew {
+    width:84% !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 8%;
+    font-size:18px;
+}
+#contactnew h1 {
+    font-size:45px;
+    word-wrap:break-word;
+}
+#contactnew table {
+    width:70%;
+    margin-top:4vh;
+}
+#contactnew table tr td {
+    width:20% !important;
+    text-align:left;
+}
+
+#research {
+    width:84% !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 8%;
+    font-size:18px;
+}
+#research h1 {
+    font-size:45px;
+    word-wrap:break-word;
+}
+
+#research table {
+    width: 100%;
+    table-layout: fixed; /* Ensures the table takes up the full width */
+  }
+
+  #research td {
+    vertical-align: top;
+    padding: 10px;
+  }
+
+  .diagram {
+    width: 50%; /* Adjust width as needed */
+  }
+
+  .diagram iframe {
+    width: 100%;
+    height: 315px; /* Adjust height as needed */
+  }
+
+  .abstract {
+    width: 50%; /* Adjust width as needed */
+  }
+
+
 .social {
     color:rgb(115,245,220);
     font-size:23px;

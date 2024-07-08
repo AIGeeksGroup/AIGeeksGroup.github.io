@@ -24,13 +24,13 @@
     <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
         <table>
             <tr>
-                <td id="logo" style="width: 200px;"><img src="asset/aigeeks.svg" style="width: 50%;"></td>
+                <td id="logo" style="width: 200px;"><a href="#home"><img src="asset/icon/aigeeks.svg" style="width: 50%;"></a></td>
                 <td id="navigation">
                     <a href="#about" class="button-link">About</a>
                     <a href="#news" class="button-link">News</a>
                     <a href="#research" class="button-link">Research</a>
                     <a href="#people" class="button-link">People</a>
-                    <a href="#contact" class="button-link">Contact</a>
+                    <a href="#contactnew" class="button-link">Contact</a>
                 </td>
             </tr>
         </table>
@@ -46,14 +46,14 @@
                     <h1>Timing beats speed.</h1>
                   </div>
                   <p style="height: 20px;">&nbsp;</p>
-                  <a href="#contact" class="btn_one">Join Us</a><br>
+                  <a href="#contactnew" class="btn_one">Join Us</a><br>
                 <table>
                     <tr>
-                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                      <td class="animated zoomIn" style="animation-delay:2.2s;">
+                        <a class="social" href="https://github.com/orgs/AIGeeksGroup/" target="_blank">
+                          <img src="asset/icon/github.svg" style="width: 40px; height: 40px;">
+                        </a>
+                      </td>
                     </tr>
                 </table>
             </td>
@@ -79,6 +79,19 @@
         <p><b>(09/29/2023)</b> &#127881; Our paper <a href="https://github.com/White65534/BHSD">BHSD</a> has been accepted to <a href="https://sites.google.com/view/mlmi2023"><b>MLMI 2023</b></a>!</p>
         <p><b>(08/23/2023)</b> &#127881; Our paper <a href="https://github.com/White65534/BHSD">BHSD</a> has been highlighted by <a href="https://wx.zsxq.com/mweb/views/topicdetail/topicdetail.html?topic_id=588155111148854&group_id=142181451122&inviter_id=585252854845544"><b>CVer</b></a>!</p>
     </div>
+    <div id="research">
+      <h1>Research</h1>
+      <table>
+        <tr>
+          <td class="diagram">
+            <iframe src="https://www.youtube.com/embed/gK3cgMo0Eos?si=ZIb9-slD7_1AHvFi" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </td>
+          <td class="abstract">
+            <p>Diabetes, caused by inadequate insulin production or utilization, inflicts extensive harm. Existing diagnostics are often invasive and costly. Current machine learning models like Classwise k Nearest Neighbor (CkNN) and General Regression Neural Network (GRNN) struggle with imbalanced data. We propose a non-invasive diagnosis method using a Back Propagation Neural Network (BPNN) with batch normalization and data re-sampling for class balancing. This approach improves accuracy, sensitivity, and specificity. Experimental results show 89.81% accuracy on the Pima diabetes dataset, 75.49% on the CDC BRFSS2015 dataset, and 95.28% on the Mesra Diabetes dataset, highlighting the potential of advanced deep learning models for robust diagnosis.</p>
+          </td>
+        </tr>
+      </table>
+  </div>
     <div id="people">
         <h1>People</h1>
         <div class="person-container">
@@ -329,54 +342,19 @@
 
 
     </div>
-    <div id="contact">
+
+
+    <div id="contactnew">
         <h1>Contact</h1>
-            <table>
-                <tr>
-                    <td>
-                        <div id="inner_div">
-                            <table id="inner_table">
-                                <tr>
-                                    <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-at"></i> &nbsp; yourname@email.com</td>
-                                </tr>
-                                 <tr>
-                                    <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i>
-                                    <div id="address">
-                                        Street 123,<br>
-                                        blah blah city,<br>
-                                        blah blah country
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="social"><i class="fab fa-facebook"></i></a>
-                                        <a class="social"><i class="fab fa-twitter"></i></a>
-                                        <a class="social"><i class="fab fa-instagram"></i></a>
-                                        <a class="social"><i class="fab fa-dribbble"></i></a>
-                                        <a class="social"><i class="fab fa-medium"></i></a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td>
-                        <form>
-                            <input type="text" placeholder="name" required>
-                            <input type="email" placeholder="email" required><br>
-                            <textarea placeholder="your message" required rows="5"></textarea><br>
-                            <button class="btn_one">send</button>
-                        </form> 
-                    </td>
-                </tr>
-            </table>
+        <p>
+            Email: <a href="mailto:ai.geeks@outlook.com">ai.geeks@outlook.com</a>
+        </p>
     </div>
+
+
+    
+
     <script src="index.js" type="text/javascript"></script>
+
 </body>
 </html>
