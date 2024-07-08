@@ -107,12 +107,12 @@ header table {
 }
 #about {
     width:84% !important;
-    height:95vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     text-align:left;
     padding:0px 8%;
+    font-size:18px;
 }
 #about h1 {
     font-size:45px;
@@ -126,6 +126,76 @@ header table {
     width:20% !important;
     text-align:left;
 }
+
+#news {
+    width:84% !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 8%;
+    font-size:18px;
+}
+#news h1 {
+    font-size:45px;
+    word-wrap:break-word;
+}
+#news table {
+    width:70%;
+    margin-top:4vh;
+}
+#news table tr td {
+    width:20% !important;
+    text-align:left;
+}
+
+
+#people {
+    width:84% !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 8%;
+    font-size:18px;
+}
+#people h1 {
+    font-size:45px;
+    word-wrap:break-word;
+}
+#people table {
+    width:70%;
+    margin-top:4vh;
+}
+#people table tr td {
+    width:20% !important;
+    text-align:left;
+}
+
+#home {
+    width:84% !important;
+    height:95vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 8%;
+    font-size:18px;
+}
+#home h1 {
+    font-size:45px;
+    word-wrap:break-word;
+}
+#home table {
+    width:70%;
+    margin-top:4vh;
+}
+#home table tr td {
+    width:20% !important;
+    text-align:left;
+}
+
+
 .social {
     color:rgb(115,245,220);
     font-size:23px;
@@ -154,6 +224,7 @@ header table {
     font-weight:bold;
     margin:2vh 0px;
     transition:0.4s ease-in-out;
+    text-align: center;
 }
 .btn_one:hover {
     box-shadow:0px 10px 30px rgba(115,245,220, 0.8);
@@ -164,7 +235,7 @@ header table {
 #rightImage {
     width:100%;
     height:95vh;
-    background:linear-gradient(0deg,rgba(115,245,220, 0.8),rgba(115,245,220, 0.8)),url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
+    background:url("https://images.unsplash.com/photo-1506057527569-6a0285b2fcc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=60") center center;
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -397,18 +468,81 @@ button:focus {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 10s steps(40, end) infinite,
       blink-caret .75s step-end infinite;
   }
   
   /* The typing effect */
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    0% { width: 0; }
+    35% { width: 100%; }
+    85% { width: 100%; }
+    100% { width: 0; }
   }
-  
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(115,245,220); }
+  }
+
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none; /* Remove border */
+    border-radius: 25px; /* Makes the shape oval */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    color: black !important; /* Black text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Adjust font size */
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+
+  .button-link:hover {
+    background-color: white; /* Background color on hover */
+    color: black; /* Text color on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: adds a subtle shadow on hover */
+  }
+
+  .person-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: center; /* Center align items horizontally */
+    gap: 20px; /* Space between persons */
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+
+  .person {
+    width: calc(20% - 20px); /* Adjust width and gap as needed */
+    text-align: center;
+    margin-bottom: 20px; /* Space between rows */
+  }
+
+  .person img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Round images */
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 20px; /* Larger text for name */
+    font-weight: bold;
+    text-align: center; /* Center align name */
+  }
+
+  .details {
+    font-size: 16px; /* Smaller text for details */
+    color: #666;
+    text-align: left; /* Left align details */
+  }
+
+  .details ul {
+    padding-left: 0; /* Remove default padding */
+    list-style-position: inside; /* Place bullets inside the list items */
+  }
+
+  .details li {
+    margin-bottom: 5px; /* Space between list items */
   }
