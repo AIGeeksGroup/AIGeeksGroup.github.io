@@ -1,5 +1,6 @@
 // Array of image URLs
 const images = [
+    "asset/image/xlip.svg",
     "asset/image/motionavatar.gif",
     "asset/image/jointvit.svg",
     "asset/image/segreg.gif",
