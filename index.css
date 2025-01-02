@@ -172,6 +172,28 @@ header table {
     text-align:left;
 }
 
+#alumni {
+    width:84% !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+    padding:0px 8%;
+    font-size:18px;
+}
+#alumni h1 {
+    font-size:45px;
+    word-wrap:break-word;
+}
+#alumni table {
+    width:70%;
+    margin-top:4vh;
+}
+#alumni table tr td {
+    width:20% !important;
+    text-align:left;
+}
+
 #home {
     width:84% !important;
     height:95vh;
